@@ -1,0 +1,11 @@
+/* 
+  Reset all: 
+  - https://css-tricks.com/an-interview-with-elad-shechter-on-the-new-css-reset/
+  - Inherited properties to inherit value
+  - Non-inherited properties to initial value
+*/
+* {
+  all: unset;
+}
+
+/*# sourceMappingURL=dro.css.map */
