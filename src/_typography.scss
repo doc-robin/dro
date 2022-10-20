@@ -1,0 +1,82 @@
+$font-family-1: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$font-family-2: "Ubuntu", sans-serif;
+ 
+.dro {
+    --font-size-1: 44px;
+    --line-height-1: 56px;
+
+    --font-size-2: 32px;
+    --line-height-2: 38px;
+
+    --font-size-3: 24px;
+    --line-height-3: 32px;
+
+    --font-size-4: 18px;
+    --line-height-4: 26px;
+
+    --font-size-5: 12px;
+    --line-height-5: 16px;
+
+    --font-size-6: 12px;
+    --line-height-6: 16px;
+
+    --lh: var(--line-height-4);
+    --lhh: calc(var(--line-height-4) / 2);
+
+    p {
+        margin-top: var(--lh);
+        margin-bottom: var(--lh);
+    }
+}
+
+%font-size-1 {
+	font-size: var(--font-size-1);
+	line-height: var(--line-height-1);
+}
+
+%font-size-2 {
+	font-size: var(--font-size-2);
+	line-height: var(--line-height-2);
+}
+
+%font-size-3 {
+	font-size: var(--font-size-3);
+	line-height: var(--line-height-3);
+}
+
+%font-size-4 {
+	font-size: var(--font-size-4);
+	line-height: var(--line-height-4);
+}
+
+%font-size-5 {
+	font-size: var(--font-size-5);
+	line-height: var(--line-height-5);
+}
+
+%font-size-6 {
+	font-size: var(--font-size-6);
+	line-height: var(--line-height-6);
+}
+
+@mixin font-size($size) {
+    @extend %font-size-#{$size};       
+}
+
+@mixin make-font-size-classes {
+	@for $i from 1 through 6 {
+		.dro-font-size-#{$i} {
+			@include font-size($i);
+            margin-top: var(--lh);
+            margin-bottom: var(--lh);
+		}
+        .dro h#{$i} {
+            @include font-size($i);
+            font-weight: bold;
+            margin-top: var(--lh);
+            margin-bottom: var(--lh);
+        }
+	}
+}
+
+@include make-font-size-classes;

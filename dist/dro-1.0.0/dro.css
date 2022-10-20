@@ -4,8 +4,167 @@
   - Inherited properties to inherit value
   - Non-inherited properties to initial value
 */
-* {
+.dro {
   all: unset;
+}
+.dro * {
+  all: unset;
+}
+.dro h1, .dro h2, .dro h3, .dro h4, .dro h5, .dro h6, .dro div, .dro ul, .dro ol, .dro dl, .dro p, .dro main {
+  display: block;
+}
+
+.dro {
+  --font-size-1: 44px;
+  --line-height-1: 56px;
+  --font-size-2: 32px;
+  --line-height-2: 38px;
+  --font-size-3: 24px;
+  --line-height-3: 32px;
+  --font-size-4: 18px;
+  --line-height-4: 26px;
+  --font-size-5: 12px;
+  --line-height-5: 16px;
+  --font-size-6: 12px;
+  --line-height-6: 16px;
+  --lh: var(--line-height-4);
+  --lhh: calc(var(--line-height-4) / 2);
+}
+.dro p {
+  margin-top: var(--lh);
+  margin-bottom: var(--lh);
+}
+
+.dro h1, .dro-font-size-1 {
+  font-size: var(--font-size-1);
+  line-height: var(--line-height-1);
+}
+
+.dro h2, .dro-font-size-2 {
+  font-size: var(--font-size-2);
+  line-height: var(--line-height-2);
+}
+
+.dro h3, .dro-font-size-3 {
+  font-size: var(--font-size-3);
+  line-height: var(--line-height-3);
+}
+
+.dro, .dro h4, .dro-font-size-4 {
+  font-size: var(--font-size-4);
+  line-height: var(--line-height-4);
+}
+
+.dro h5, .dro-font-size-5 {
+  font-size: var(--font-size-5);
+  line-height: var(--line-height-5);
+}
+
+.dro h6, .dro-font-size-6 {
+  font-size: var(--font-size-6);
+  line-height: var(--line-height-6);
+}
+
+.dro-font-size-1 {
+  margin-top: var(--lh);
+  margin-bottom: var(--lh);
+}
+
+.dro h1 {
+  font-weight: bold;
+  margin-top: var(--lh);
+  margin-bottom: var(--lh);
+}
+
+.dro-font-size-2 {
+  margin-top: var(--lh);
+  margin-bottom: var(--lh);
+}
+
+.dro h2 {
+  font-weight: bold;
+  margin-top: var(--lh);
+  margin-bottom: var(--lh);
+}
+
+.dro-font-size-3 {
+  margin-top: var(--lh);
+  margin-bottom: var(--lh);
+}
+
+.dro h3 {
+  font-weight: bold;
+  margin-top: var(--lh);
+  margin-bottom: var(--lh);
+}
+
+.dro-font-size-4 {
+  margin-top: var(--lh);
+  margin-bottom: var(--lh);
+}
+
+.dro h4 {
+  font-weight: bold;
+  margin-top: var(--lh);
+  margin-bottom: var(--lh);
+}
+
+.dro-font-size-5 {
+  margin-top: var(--lh);
+  margin-bottom: var(--lh);
+}
+
+.dro h5 {
+  font-weight: bold;
+  margin-top: var(--lh);
+  margin-bottom: var(--lh);
+}
+
+.dro-font-size-6 {
+  margin-top: var(--lh);
+  margin-bottom: var(--lh);
+}
+
+.dro h6 {
+  font-weight: bold;
+  margin-top: var(--lh);
+  margin-bottom: var(--lh);
+}
+
+.dro {
+  --color-1: rgb(66, 143, 3);
+  --color-2: #428f031f;
+  --color-3: #e3e3da1f;
+  --color-4: rgb(142, 209, 252);
+}
+
+.dro {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.dro {
+  box-sizing: border-box;
+}
+.dro .container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+}
+.dro .container > * {
+  width: 100%;
+}
+
+.dro-visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  color: var(--color-text);
 }
 
 /*# sourceMappingURL=dro.css.map */

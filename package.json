@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "scripts": {
     "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css src/:dist/dro-$npm_package_version",
-    "css-watch": "sass --watch --style expanded --source-map --embed-sources --no-error-css src/:watch/dro-$npm_package_version"    
+    "css-watch": "sass --watch --style expanded --source-map --embed-sources --no-error-css src/:dist/dro-$npm_package_version"    
   },
   "devDependencies": {
     "sass": "^1.54.9"
