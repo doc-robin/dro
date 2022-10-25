@@ -1,0 +1,21 @@
+.dro {
+
+    &-input[type="email"],
+    &-input[type="password"],
+    &-input[type="text"],
+    &-input[type="number"],
+    &-input[type="date"] {
+        display: inline-block;
+        width: 100%;
+        padding: var(--lhh);
+        border-radius: var(--lhh);
+        border: 1px solid var(--color-5);
+        transition: border-color .075s ease-in;
+        margin: var(--lhh) 0;
+        background: var(--color-6);
+
+        &:focus {
+            border-color: var(--color-1);
+        }
+    }
+}

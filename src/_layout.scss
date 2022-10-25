@@ -1,18 +1,23 @@
 $side-padding: 1rem;
 $max-layout-width: 1280px;
+$max-layout-small: 360px;
 
 .dro {
     box-sizing: border-box;
 
-    .container {
+    &-container {
         padding-left: $side-padding;
         padding-right: $side-padding;
         margin-left: auto;
         margin-right: auto;
         max-width: $max-layout-width;
 
-        > * {
+        >* {
             width: 100%;
         }
+    }
+
+    &-container--small {
+        max-width: $max-layout-small;
     }
 }

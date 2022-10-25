@@ -1,0 +1,48 @@
+/**
+ * A few tailwind-style helper classes for setting up spacing.
+ * It sets up margin and padding classes for both top and bottom.
+ */
+
+
+$steps: 7;
+$vertical-root-size: 7px;
+$horizontal-root-size: .5rem;
+
+@mixin make-spacing-classes {
+    @for $i from 0 through $steps {
+        .dro-mt-#{$i} {
+            margin-top: $i * $vertical-root-size;
+        }
+
+        .dro-mb-#{$i} {
+            margin-bottom: $i * $vertical-root-size;
+        }
+
+        .dro-mr-#{$i} {
+            margin-right: $i * $horizontal-root-size;
+        }
+
+        .dro-ml-#{$i} {
+            margin-left: $i * $horizontal-root-size;
+        }
+
+        .dro-pt-#{$i} {
+            padding-top: $i * $vertical-root-size;
+        }
+
+        .dro-pb-#{$i} {
+            padding-bottom: $i * $vertical-root-size;
+        }
+
+        .dro-pr-#{$i} {
+            padding-right: $i * $horizontal-root-size;
+        }
+
+        .dro-pl-#{$i} {
+            padding-left: $i * $horizontal-root-size;
+        }
+
+    }
+}
+
+@include make-spacing-classes;

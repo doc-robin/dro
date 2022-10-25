@@ -1,0 +1,47 @@
+.dro {
+    &-button {
+        border: .1rem solid transparent;
+        cursor: pointer;
+        transition: all .1s ease-in;
+        text-decoration: unset;
+        outline: unset;
+        display: inline-block;
+        font-weight: normal;
+        border-radius: var(--lhh);
+        padding: var(--lhh);
+        min-width: 100px;
+        text-align: center;
+
+        &:active {
+            transform: scale(95%);
+        }
+
+        &:focus-visible {
+            box-shadow: 0 0 1px 2px var(--color-1);
+            outline: unset;
+        }
+
+        &:disabled {
+            opacity: .5;
+            cursor: not-allowed;
+        }
+
+
+        /**
+         * --- Styling ---
+         */
+
+        &--primary {
+            background: var(--color-1);
+            border-color: var(--color-1);
+            color: var(--color-6);
+
+
+            &:hover {
+                background: var(--color-1);
+                border-color: var(--color-1);
+                color: var(--color-6);
+            }
+        }
+    }
+}
