@@ -1,16 +1,15 @@
 .dro {
     &-button {
-        border: .1rem solid transparent;
         cursor: pointer;
-        transition: all .1s ease-in;
         text-decoration: unset;
         outline: unset;
         display: inline-block;
         font-weight: normal;
-        border-radius: var(--lhh);
+        border-radius: var(--default-border-radius);
         padding: var(--lhh);
         min-width: 100px;
         text-align: center;
+        transition: all .125s ease-in;
 
         &:active {
             transform: scale(95%);
@@ -33,14 +32,30 @@
 
         &--primary {
             background: var(--color-1);
-            border-color: var(--color-1);
             color: var(--color-6);
+            box-shadow: 5px 5px 10px #a1a09c, -5px -5px 10px #ffffff;
+            border: none;
 
 
-            &:hover {
+            &:hover,
+            &:focus {
+                border: none;
                 background: var(--color-1);
-                border-color: var(--color-1);
                 color: var(--color-6);
+                box-shadow: inset 5px 5px 10px #265302, inset -5px -5px 10px #5ecb04;
+            }
+        }
+
+        &--secondary {
+            background: var(--color-8);
+            color: var(--color-7);
+            box-shadow: 5px 5px 10px #a5a4a2, -5px -5px 10px #ffffff;
+
+            &:hover,
+            &:focus {
+                background: var(--color-8);
+                color: var(--color-7);
+                box-shadow: inset 5px 5px 10px #8b8a88, inset -5px -5px 10px #ffffff;
             }
         }
     }

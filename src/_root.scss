@@ -1,4 +1,6 @@
 .dro {
     font-family: typography.$font-family-1;
     @include typography.font-size(4);
+
+    --default-border-radius: var(--lhh);
 }

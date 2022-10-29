@@ -1,0 +1,27 @@
+.dro-alert {
+    color: #084298;
+    background: #cfe2ff;
+    border: 1px solid #b6d4fe;
+    margin-top: var(--lh);
+    margin-bottom: var(--lh);
+    padding: var(--lhh) 1rem;
+    border-radius: var(--default-border-radius);
+
+    &--danger {
+        color: #842029;
+        background: #f8d7da;
+        border-color: #f5c2c7;
+    }
+
+    &--warning {
+        color: #664d03;
+        background-color: #fff3cd;
+        border-color: #ffecb5;
+    }
+
+    &--success {
+        color: #0f5132;
+        background-color: #d1e7dd;
+        border-color: #badbcc;
+    }
+}
