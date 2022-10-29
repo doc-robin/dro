@@ -1,10 +1,33 @@
 {
-  "version": "1.0.0",
+  "name": "@docrobin/dro",
+  "description": "DocRobin design system",
+  "main": "index.js",
+  "version": "1.0.3",
   "scripts": {
-    "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css src/:dist/dro-$npm_package_version",
-    "css-watch": "sass --watch --style expanded --source-map --embed-sources --no-error-css src/:dist/dro-$npm_package_version"    
+    "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css src/:dist/",
+    "css-watch": "sass --watch --style expanded --source-map --embed-sources --no-error-css src/:dist/"
   },
   "devDependencies": {
     "sass": "^1.54.9"
-  }
+  },
+  "files": [
+    "dist/*"
+  ],
+  "dependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doc-robin/dro.git"
+  },
+  "keywords": [
+    "design system",
+    "CSS",
+    "DocRobin"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doc-robin/dro/issues"
+  },
+  "homepage": "https://github.com/doc-robin/dro#readme"
 }

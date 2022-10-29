@@ -9,8 +9,9 @@
 }
 .dro * {
   all: unset;
+  box-sizing: border-box;
 }
-.dro h1, .dro h2, .dro h3, .dro h4, .dro h5, .dro h6, .dro div, .dro ul, .dro ol, .dro dl, .dro p, .dro main {
+.dro h1, .dro h2, .dro h3, .dro h4, .dro h5, .dro h6, .dro div, .dro ul, .dro ol, .dro dl, .dro p, .dro main, .dro section, .dro article, .dro summary, .dro detail {
   display: block;
 }
 
@@ -66,76 +67,77 @@
 }
 
 .dro-font-size-1 {
-  margin-top: var(--lh);
-  margin-bottom: var(--lh);
+  padding-top: var(--lh);
+  padding-bottom: var(--lh);
 }
 
 .dro h1 {
   font-weight: bold;
-  margin-top: var(--lh);
-  margin-bottom: var(--lh);
+  padding-top: var(--lh);
+  padding-bottom: var(--lh);
 }
 
 .dro-font-size-2 {
-  margin-top: var(--lh);
-  margin-bottom: var(--lh);
+  padding-top: var(--lh);
+  padding-bottom: var(--lh);
 }
 
 .dro h2 {
   font-weight: bold;
-  margin-top: var(--lh);
-  margin-bottom: var(--lh);
+  padding-top: var(--lh);
+  padding-bottom: var(--lh);
 }
 
 .dro-font-size-3 {
-  margin-top: var(--lh);
-  margin-bottom: var(--lh);
+  padding-top: var(--lh);
+  padding-bottom: var(--lh);
 }
 
 .dro h3 {
   font-weight: bold;
-  margin-top: var(--lh);
-  margin-bottom: var(--lh);
+  padding-top: var(--lh);
+  padding-bottom: var(--lh);
 }
 
 .dro-font-size-4 {
-  margin-top: var(--lh);
-  margin-bottom: var(--lh);
+  padding-top: var(--lh);
+  padding-bottom: var(--lh);
 }
 
 .dro h4 {
   font-weight: bold;
-  margin-top: var(--lh);
-  margin-bottom: var(--lh);
+  padding-top: var(--lh);
+  padding-bottom: var(--lh);
 }
 
 .dro-font-size-5 {
-  margin-top: var(--lh);
-  margin-bottom: var(--lh);
+  padding-top: var(--lh);
+  padding-bottom: var(--lh);
 }
 
 .dro h5 {
   font-weight: bold;
-  margin-top: var(--lh);
-  margin-bottom: var(--lh);
+  padding-top: var(--lh);
+  padding-bottom: var(--lh);
 }
 
 .dro-font-size-6 {
-  margin-top: var(--lh);
-  margin-bottom: var(--lh);
+  padding-top: var(--lh);
+  padding-bottom: var(--lh);
 }
 
 .dro h6 {
   font-weight: bold;
-  margin-top: var(--lh);
-  margin-bottom: var(--lh);
+  padding-top: var(--lh);
+  padding-bottom: var(--lh);
 }
 
 .dro {
   --color-1: rgb(66, 143, 3);
   --color-2: #428f031f;
-  --color-3: #e3e3da1f;
+  --color-3: #e7e7e7;
   --color-4: rgb(142, 209, 252);
+  --color-5: rgb(255, 255, 255);
 }
 
 .dro {
@@ -145,14 +147,14 @@
 .dro {
   box-sizing: border-box;
 }
-.dro .container {
+.dro-container {
   padding-left: 1rem;
   padding-right: 1rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1280px;
+  max-width: 960px;
 }
-.dro .container > * {
+.dro-container > * {
   width: 100%;
 }
 
@@ -165,6 +167,28 @@
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
   color: var(--color-text);
+}
+
+.dro .dro-chat {
+  padding: var(--lhh);
+  background: var(--color-3);
+}
+.dro .dro-chat--start {
+  background: var(--color-5);
+  margin-top: var(--lhh);
+  margin-bottom: var(--lhh);
+  padding: var(--lhh);
+  border-radius: var(--lhh);
+  width: 60%;
+}
+.dro .dro-chat--end {
+  margin-top: var(--lhh);
+  margin-bottom: var(--lhh);
+  padding: var(--lhh);
+  border-radius: var(--lhh);
+  width: 60%;
+  background: var(--color-2);
+  margin-left: 40%;
 }
 
 /*# sourceMappingURL=dro.css.map */

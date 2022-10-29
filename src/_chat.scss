@@ -1,0 +1,25 @@
+@mixin chat-bubble {
+    margin-top: var(--lhh);
+    margin-bottom: var(--lhh);
+    padding: var(--lhh);
+    border-radius: var(--lhh);
+    width: 60%;
+}
+
+.dro {
+    .dro-chat {
+        padding: var(--lhh);
+        background: var(--color-3);
+
+        &--start {
+            background: var(--color-5);
+            @include chat-bubble();
+        }
+
+        &--end {
+            @include chat-bubble();
+            background: var(--color-2);
+            margin-left: 40%;
+        }
+    }
+}
