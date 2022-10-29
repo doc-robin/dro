@@ -2,24 +2,37 @@
     margin-top: var(--lhh);
     margin-bottom: var(--lhh);
     padding: var(--lhh);
-    border-radius: var(--lhh);
+    border-radius: var(--default-border-radius);
     width: 60%;
+
+    >* {
+        margin: 0;
+    }
 }
 
 .dro {
+    --default-border-radius: 8px;
+
     .dro-chat {
         padding: var(--lhh);
         background: var(--color-3);
+        @include typography.font-size(5);
 
-        &--start {
-            background: var(--color-5);
+        &--bot {
+            background: var(--color-6);
             @include chat-bubble();
         }
 
-        &--end {
+        &--user {
             @include chat-bubble();
             background: var(--color-2);
             margin-left: 40%;
+        }
+
+        &--info {
+            @include typography.font-size(5);
+            text-align: center;
+            color: var(--color-9);
         }
     }
 }

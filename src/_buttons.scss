@@ -58,5 +58,20 @@
                 box-shadow: inset 5px 5px 10px #8b8a88, inset -5px -5px 10px #ffffff;
             }
         }
+
+        &--chat {
+            background: var(--color-1);
+            color: var(--color-6);
+            border: none;
+            padding: .5rem 1rem;
+            @include typography.font-size(5);
+
+            &:hover,
+            &:focus {
+                border: none;
+                background: var(--color-1);
+                color: var(--color-6);
+            }
+        }
     }
 }
