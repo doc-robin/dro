@@ -69,17 +69,18 @@ $font-family-2: "Ubuntu", sans-serif;
 }
 
 @mixin make-font-size-classes {
-	@for $i from 1 through 6 {
-		.dro-font-size-#{$i} {
-			@include font-size($i);
-            padding-top: var(--lh);
-            padding-bottom: var(--lh);
-		}
+    @for $i from 1 through 6 {
+        .dro-font-size-#{$i} {
+            @include font-size($i);
+            margin-top: var(--lhh);
+            margin-bottom: var(--lhh);
+        }
+
         .dro h#{$i} {
             @include font-size($i);
             font-weight: bold;
-            padding-top: var(--lh);
-            padding-bottom: var(--lh);
+            margin-top: var(--lhh);
+            margin-bottom: var(--lhh);
         }
     }
 }

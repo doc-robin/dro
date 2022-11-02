@@ -4,10 +4,11 @@
     &-input[type="password"],
     &-input[type="text"],
     &-input[type="number"],
-    &-input[type="date"] {
+    &-input[type="date"],
+    &-input[type="phone"] {
         display: inline-block;
-        width: calc(100% - 2 * var(--lhh));
         padding: var(--lhh);
+        width: 100%;
         border-radius: var(--default-border-radius);
         border: 1px solid var(--color-5);
         transition: border-color .075s ease-in;
@@ -17,5 +18,14 @@
         &:focus {
             border-color: var(--color-1);
         }
+    }
+
+    .dro-fieldset {
+        margin: var(--lhh) 0;
+    }
+
+    .dro-help-text {
+        margin: 0 0 var(--lhh) 0;
+        @include typography.font-size(6);
     }
 }
