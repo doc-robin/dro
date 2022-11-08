@@ -6,7 +6,7 @@ $max-layout-small: 360px;
     box-sizing: border-box;
 
 
-    &-container {
+    .dro-container {
         padding: var(--lh) $side-padding;
         margin-left: auto;
         margin-right: auto;
@@ -17,7 +17,7 @@ $max-layout-small: 360px;
         }
     }
 
-    &-container--small {
+    .dro-container--small {
         max-width: $max-layout-small;
     }
 }

@@ -6,14 +6,26 @@
 */
 
 .dro {
-    all: unset;
 
-    * {
-        all: unset;
-        box-sizing: border-box;
-    }
-
-    h1, h2, h3, h4, h5, h6, div, ul, ol, dl, p, main, nav, section, article, summary, detail {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    div,
+    ul,
+    ol,
+    dl,
+    p,
+    main,
+    nav,
+    section,
+    article,
+    summary,
+    detail {
         display: block;
+        padding: 0;
+        margin: 0;
     }
 }
