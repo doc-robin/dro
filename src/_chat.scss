@@ -14,18 +14,19 @@
     --default-border-radius: 8px;
 
     .dro-chat {
-        padding: var(--lhh);
-        background: var(--color-3);
+        padding: 0 var(--lhh);
+        // 
         @include typography.font-size(5);
 
         &--bot {
-            background: var(--color-6);
+            background: var(--color-3);
             @include chat-bubble();
         }
 
         &--user {
             @include chat-bubble();
             background: var(--color-2);
+            //background: var(--color-2);
             margin-left: 40%;
         }
 
@@ -34,5 +35,17 @@
             text-align: center;
             color: var(--color-9);
         }
+
+        &__footer {
+            position: sticky;
+            // border-top: 1px solid var(--color-5);
+            bottom: 0;
+            padding-top: var(--lhh);
+            padding-bottom: var(--lhh);
+            width: 100%;
+            background: var(--color-8);
+        }
     }
+
+
 }
