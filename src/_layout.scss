@@ -20,4 +20,9 @@ $max-layout-small: 360px;
     .dro-container--small {
         max-width: $max-layout-small;
     }
+
+    .dro-restrict-width {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
 }

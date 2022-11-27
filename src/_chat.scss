@@ -12,10 +12,9 @@
 
 .dro {
     --default-border-radius: 8px;
+    min-height: 100vh;
 
     .dro-chat {
-        padding: 0 var(--lhh);
-        // 
         @include typography.font-size(5);
 
         &--bot {
