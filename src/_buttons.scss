@@ -74,4 +74,21 @@
             }
         }
     }
+
+    &-button-circular {
+        width: 38px;
+        height: 38px;
+        display: inline-block;
+        border-radius: 50%;
+        background: var(--color-1);
+        color: var(--color-6);
+        border: none;
+
+        &:hover,
+        &:focus {
+            border: none;
+            background: var(--color-1);
+            color: var(--color-6);
+        }
+    }
 }
