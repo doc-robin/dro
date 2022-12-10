@@ -3,11 +3,14 @@
     margin-bottom: var(--lhh);
     padding: var(--lhh);
     border-radius: var(--default-border-radius);
-    min-width: 320px;
-    width: 60%;
+    width: 85%;
 
     >* {
         margin: 0;
+    }
+
+    @include breakpoints.breakpoint(s) {
+        width: 60%;
     }
 }
 
@@ -19,6 +22,12 @@
     .dro-chat {
         @include typography.font-size(5);
 
+
+        &--inner {
+            display: flex;
+            flex-direction: column;
+        }
+
         &--bot {
             background: var(--color-3);
             @include chat-bubble();
@@ -27,14 +36,19 @@
         &--user {
             @include chat-bubble();
             background: var(--color-2);
-            //background: var(--color-2);
-            margin-left: 40%;
+            align-self: flex-end;
+            // margin-left: 40%;
         }
 
         &--info {
             @include typography.font-size(5);
             text-align: center;
             color: var(--color-9);
+        }
+
+        &--edit-response {
+            // margin-left: 40%;
+            text-align: end;
         }
 
         &__footer {
