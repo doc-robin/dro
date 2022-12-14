@@ -52,7 +52,7 @@
         }
 
         &__footer {
-            position: fixed;
+            position: sticky;
             // border-top: 1px solid var(--color-5);
             bottom: 0;
             padding-top: var(--lhh);
@@ -61,7 +61,6 @@
             background: var(--color-8);
 
             min-height: 72px;
-            max-height: 120px;
             overflow-y: auto;
             display: flex;
             align-items: center;

@@ -1,5 +1,4 @@
 .dro {
     @include typography.font-size(4);
     --default-border-radius: var(--lhh);
-    padding-bottom: 150px;
 }
