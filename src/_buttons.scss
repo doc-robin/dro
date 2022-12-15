@@ -35,7 +35,7 @@
             color: var(--color-6);
             box-shadow: 5px 5px 10px #a1a09c, -5px -5px 10px #ffffff;
             border: none;
-
+            transition: all .125s ease-in;
 
             &:hover,
             &:focus {
@@ -50,6 +50,7 @@
             background: var(--color-8);
             color: var(--color-7);
             box-shadow: 5px 5px 10px #a5a4a2, -5px -5px 10px #ffffff;
+            transition: all .125s ease-in;
 
             &:hover,
             &:focus {
