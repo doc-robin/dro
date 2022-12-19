@@ -10,6 +10,8 @@
         min-width: 100px;
         text-align: center;
         transition: all .125s ease-in;
+        margin-right: 1rem;
+        width: auto;
 
         &:active {
             transform: scale(95%);
