@@ -28,4 +28,29 @@
         margin: 0 0 var(--lhh) 0;
         @include typography.font-size(6);
     }
+
+    .dro-droparea {
+        border: 4px dashed var(--color-5);
+
+        padding: 1rem;
+        color: var(--color-9);
+        cursor: pointer;
+        transition: border-color .125s ease-in;
+        height: 192px;
+
+        * {
+            text-align: center;
+        }
+
+        &--active {
+            border-color: var(--color-1);
+        }
+
+        display: flex;
+
+        &__inner {
+            align-self: center;
+        }
+    }
+
 }
