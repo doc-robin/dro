@@ -4,6 +4,8 @@ $max-layout-small: 360px;
 
 .dro {
     box-sizing: border-box;
+    width: 100%;
+    background: white;
 
     .dro-container {
         padding: var(--lh) $side-padding;
@@ -26,5 +28,11 @@ $max-layout-small: 360px;
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
+
+        // 1040 => total of max-width + paddings
+        @media screen and (min-width: 1040px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 }
