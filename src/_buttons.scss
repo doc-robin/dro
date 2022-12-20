@@ -39,8 +39,7 @@
             border: none;
             transition: all .125s ease-in;
 
-            &:hover,
-            &:focus {
+            &:hover {
                 border: none;
                 background: var(--color-1);
                 color: var(--color-6);
@@ -54,8 +53,7 @@
             box-shadow: 5px 5px 10px #a5a4a2, -5px -5px 10px #ffffff;
             transition: all .125s ease-in;
 
-            &:hover,
-            &:focus {
+            &:hover {
                 background: var(--color-8);
                 color: var(--color-7);
                 box-shadow: inset 5px 5px 10px #8b8a88, inset -5px -5px 10px #ffffff;
