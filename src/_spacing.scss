@@ -11,35 +11,35 @@ $horizontal-root-size: .5rem;
 @mixin make-spacing-classes {
     @for $i from 0 through $steps {
         .dro-mt-#{$i} {
-            margin-top: $i * $vertical-root-size;
+            margin-top: $i * $vertical-root-size !important;
         }
 
         .dro-mb-#{$i} {
-            margin-bottom: $i * $vertical-root-size;
+            margin-bottom: $i * $vertical-root-size !important;
         }
 
         .dro-mr-#{$i} {
-            margin-right: $i * $horizontal-root-size;
+            margin-right: $i * $horizontal-root-size !important;
         }
 
         .dro-ml-#{$i} {
-            margin-left: $i * $horizontal-root-size;
+            margin-left: $i * $horizontal-root-size !important;
         }
 
         .dro-pt-#{$i} {
-            padding-top: $i * $vertical-root-size;
+            padding-top: $i * $vertical-root-size !important;
         }
 
         .dro-pb-#{$i} {
-            padding-bottom: $i * $vertical-root-size;
+            padding-bottom: $i * $vertical-root-size !important;
         }
 
         .dro-pr-#{$i} {
-            padding-right: $i * $horizontal-root-size;
+            padding-right: $i * $horizontal-root-size !important;
         }
 
         .dro-pl-#{$i} {
-            padding-left: $i * $horizontal-root-size;
+            padding-left: $i * $horizontal-root-size !important;
         }
 
     }

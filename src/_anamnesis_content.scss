@@ -1,0 +1,73 @@
+.dro {
+    .dro-anamnesis {
+        max-width: 960px;
+        margin: 6rem auto;
+        display: grid;
+        grid-template-areas: "header header logo"
+            "content content content";
+        grid-template-rows: repeat(1fr, 3);
+
+        &__header {
+            grid-area: header;
+        }
+
+        &__headline {
+            @extend .dro-mt-3;
+            @extend .dro-mb-3;
+        }
+
+        &__logo-container {
+            grid-area: logo;
+            @extend .dro-pt-2;
+        }
+
+        &__logo {
+            max-width: 100%;
+            height: auto;
+        }
+
+        &__dro-address {
+            @include typography.font-size(5);
+        }
+
+        &__content {
+            grid-area: content;
+            @include typography.font-size(5);
+            border-top: 1px solid var(--color-5);
+            @extend .dro-pt-3;
+            @extend .dro-mt-3;
+
+            h2 {
+                @include typography.font-size(3);
+                margin-top: calc(1 * var(--font-size-3));
+                margin-bottom: calc(var(--font-size-3) / 2);
+            }
+
+
+            h3 {
+                @include typography.font-size(4);
+                margin-top: calc(1 * var(--font-size-4));
+                margin-bottom: calc(var(--font-size-4) / 2);
+            }
+
+            p {
+                margin-top: var(--font-size-5);
+                margin-bottom: var(--font-size-5);
+            }
+        }
+
+        &__header-table {
+            @include typography.font-size(5);
+
+            td:first-child {
+                font-weight: bold;
+                color: var(--color-9);
+            }
+
+            td {
+                vertical-align: baseline;
+                padding: 0 1rem 1rem 0;
+            }
+        }
+    }
+}
