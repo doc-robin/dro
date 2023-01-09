@@ -1,0 +1,19 @@
+@media print {
+    #App>*:not(main) {
+        display: none;
+    }
+
+    * {
+        overflow: visible !important;
+        height: auto !important;
+        overflow: visible !important;
+    }
+}
+
+@mixin no-print {
+    @media print {
+        * {
+            display: none !important;
+        }
+    }
+}

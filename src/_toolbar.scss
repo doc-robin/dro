@@ -1,5 +1,7 @@
 .dro {
     .dro-toolbar {
+        @include print.no-print;
+
         position: sticky;
         top: 0;
         background: var(--color-8);
