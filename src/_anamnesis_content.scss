@@ -6,7 +6,7 @@
             margin: 6rem auto;
         }
 
-        @media screen and (min-width: 960px) {
+        @media screen and (min-width: 480px) {
             display: grid;
             grid-template-areas:
                 "headline headline logo"
@@ -33,6 +33,10 @@
             align-self: center;
             grid-area: logo;
             @extend .dro-pt-2;
+
+            img {
+                max-width: 160px;
+            }
         }
 
         &__header {
