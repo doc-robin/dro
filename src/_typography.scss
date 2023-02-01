@@ -70,7 +70,7 @@ $font-family-2: "Ubuntu", sans-serif;
 
 @mixin make-font-size-classes {
     @for $i from 1 through 6 {
-        .dro-font-size-#{$i} {
+        .dro .dro-font-size-#{$i} {
             @include font-size($i);
             margin-top: var(--lhh);
             margin-bottom: var(--lhh);
