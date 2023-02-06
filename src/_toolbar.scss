@@ -1,24 +1,28 @@
 .dro {
-    .dro-toolbar {
-        @include print.no-print;
+  .dro-toolbar {
+    @include print.no-print;
 
-        position: sticky;
-        top: 0;
-        background: var(--color-8);
+    position: sticky;
+    top: 0;
+    background: var(--color-8);
 
-        &__inner {
-            padding: 1rem 1rem;
-            display: flex !important;
-            justify-content: space-between;
-        }
-
-        &__start {
-            flex-basis: 50%;
-        }
-
-        &__end {
-            flex-basis: 50%;
-            text-align: right;
-        }
+    &__inner {
+      padding: 1rem 0rem;
+      display: flex !important;
+      justify-content: space-between;
     }
+
+    &__start {
+      flex-basis: 50%;
+    }
+
+    &__end {
+      flex-basis: 50%;
+      text-align: right;
+
+      button:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 }
