@@ -32,6 +32,15 @@ $font-family-2: "Ubuntu", sans-serif;
         color: var(--color-1);
         text-decoration: underline;
     }
+
+    ul,
+    ol {
+        list-style-type: initial;
+    }
+
+    li {
+        margin-left: 1.5rem;
+    }
 }
 
 %font-size-1 {
@@ -70,13 +79,13 @@ $font-family-2: "Ubuntu", sans-serif;
 
 @mixin make-font-size-classes {
     @for $i from 1 through 6 {
-        .dro .dro-font-size-#{$i} {
+        .dro-font-size-#{$i} {
             @include font-size($i);
             margin-top: var(--lhh);
             margin-bottom: var(--lhh);
         }
 
-        .dro h#{$i} {
+        h#{$i} {
             @include font-size($i);
             font-weight: bold;
             margin-top: var(--lhh);

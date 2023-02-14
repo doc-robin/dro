@@ -1,0 +1,116 @@
+@mixin print-typography {
+    --report-fs: 16px;
+    --report-lh: 26px;
+
+    @media print {
+        --report-fs: 11px;
+        --report-lh: 18px;
+    }
+
+    font-size: var(--report-fs);
+    line-height: var(--report-lh);
+
+    h1 {
+        font-size: calc(1.8 * var(--report-fs));
+        line-height: calc(var(--report-lh) * 1.6);
+    }
+
+    h2 {
+        font-size: calc(1.4 * var(--report-fs));
+        line-height: calc(var(--report-lh) * 1.4);
+    }
+
+    h3 {
+        font-size: calc(1.2 * var(--report-fs));
+        line-height: calc(var(--report-lh) * 1.2);
+    }
+
+    p,
+    ul,
+    ol {
+        margin-top: calc(var(--report-lh) / 2);
+        margin-bottom: calc(var(--report-lh) / 2);
+    }
+
+    li>p {
+        margin: 0;
+    }
+
+    .small,
+    small {
+        font-size: calc(.85 * var(--report-fs));
+        line-height: calc(.8 * var(--report-lh));
+    }
+}
+
+.dro-report {
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "logo logo"
+            "title title"
+            "header-start header-end"
+            "body body"
+            "footer-start footer-end";
+
+        @include print-typography();
+
+        >* {
+            @extend .dro-mt-1;
+            @extend .dro-mb-1;
+        }
+    }
+
+    &__logo {
+        grid-area: logo;
+        text-align: end;
+
+        >img {
+            max-width: 240px;
+            display: unset;
+        }
+    }
+
+    &__title {
+        grid-area: title;
+
+        >* {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &__header-start {
+        grid-area: header-start;
+    }
+
+    &__header-end {
+        grid-area: header-end;
+    }
+
+    &__body {
+        border-top: 1px solid var(--color-3);
+        border-bottom: 1px solid var(--color-3);
+        @extend .dro-pt-3;
+        @extend .dro-pb-3;
+        grid-area: body;
+    }
+
+    &__footer-start,
+    &__footer-end {
+        @include typography.font-size(6);
+    }
+
+    &__footer-start {
+        grid-area: footer-start;
+    }
+
+    &__footer-end {
+        grid-area: footer-end;
+    }
+
+    &__footer-logo {
+        max-width: 160px;
+    }
+}
