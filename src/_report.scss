@@ -49,6 +49,10 @@ $max-logo-width: 240px;
 }
 
 .dro-report {
+    @media print {
+        max-width: 70%;
+    }
+
     &__content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -101,6 +105,10 @@ $max-logo-width: 240px;
         @extend .dro-pt-3;
         @extend .dro-pb-3;
         grid-area: body;
+
+        @media print {
+            border-color: black !important;
+        }
     }
 
     &__footer-start,
