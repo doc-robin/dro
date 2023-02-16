@@ -7,7 +7,8 @@
     background: var(--color-8);
 
     &__inner {
-      padding: 1rem 0rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
       display: flex !important;
       justify-content: space-between;
     }

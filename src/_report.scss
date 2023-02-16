@@ -54,14 +54,17 @@ $max-logo-width: 240px;
     }
 
     &__content {
+        @media screen and (max-width: 600px) {
+            display: block !important;
+        }
+
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "logo logo"
-            "title title"
-            "header-start header-end"
-            "body body"
-            "footer-start footer-end";
+        grid-template-areas: "logo logo"
+        "title title"
+        "header-start header-end"
+        "body body"
+        "footer-start footer-end";
 
         @include print-typography();
 
