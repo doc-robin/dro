@@ -1,75 +1,71 @@
 @mixin chat-bubble {
-    margin-top: var(--lhh);
-    margin-bottom: var(--lhh);
-    padding: var(--lhh);
-    border-radius: var(--default-border-radius);
-    width: 85%;
+  margin-top: var(--lhh);
+  margin-bottom: var(--lhh);
+  padding: var(--lhh);
+  border-radius: var(--default-border-radius);
+  width: 85%;
 
-    >* {
-        margin: 0;
-    }
+  > * {
+    margin: 0;
+  }
 
-    @include breakpoints.breakpoint(s) {
-        width: 60%;
-    }
+  @include breakpoints.breakpoint(s) {
+    width: 60%;
+  }
 }
 
 .dro {
-    --default-border-radius: 8px;
-    width: 100%;
+  --default-border-radius: 8px;
+  width: 100%;
 
-    .dro-chat {
-        @include typography.font-size(5);
+  .dro-chat {
+    @include typography.font-size(5);
 
-
-        &--inner {
-            display: flex;
-            flex-direction: column;
-        }
-
-        &--bot {
-            background: var(--color-3);
-            @include chat-bubble();
-        }
-
-        &--user {
-            @include chat-bubble();
-            background: var(--color-2);
-            align-self: flex-end;
-            // margin-left: 40%;
-        }
-
-        &--info {
-            @include typography.font-size(5);
-            text-align: center;
-            color: var(--color-9);
-        }
-
-        &--edit-response {
-            // margin-left: 40%;
-            text-align: end;
-        }
-
-        &__footer {
-            position: sticky;
-            // border-top: 1px solid var(--color-5);
-            bottom: 0;
-            padding-top: var(--lhh);
-            padding-bottom: var(--lhh);
-            width: 100%;
-            background: var(--color-8);
-
-            min-height: 72px;
-            overflow-y: auto;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-        }
-
-        &__footer__spinner {
-            justify-self: center;
-        }
+    &--inner {
+      display: flex;
+      flex-direction: column;
     }
 
+    &--bot {
+      background: var(--color-3);
+      @include chat-bubble();
+    }
 
+    &--user {
+      @include chat-bubble();
+      background: var(--color-2);
+      align-self: flex-end;
+      // margin-left: 40%;
+    }
+
+    &--info {
+      @include typography.font-size(5);
+      text-align: center;
+      color: var(--color-9);
+    }
+
+    &--edit-response {
+      // margin-left: 40%;
+      text-align: end;
+    }
+
+    &__footer {
+      position: sticky;
+      // border-top: 1px solid var(--color-5);
+      bottom: 0;
+      width: 100%;
+      background: var(--color-8);
+
+      min-height: 72px;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    &__footer__spinner {
+      justify-self: center;
+    }
+  }
 }
