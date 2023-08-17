@@ -25,7 +25,7 @@ $breakpoints: (
     }
 
     @else if unitless($breakpoint) {
-        $breakpoint: $breakpoint +0px;
+        $breakpoint: $breakpoint + 0px;
 
         @media (#{$direction}-width: $breakpoint) {
             @content;
